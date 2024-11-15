@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		934FF1F32CE4577600ADC151 /* DVDScreensaverScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVDScreensaverScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		934FF1F32CE4577600ADC151 /* DVDScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVDScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		934FF1F42CE4577600ADC151 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				934FF1F32CE4577600ADC151 /* DVDScreensaverScreensaver.saver */,
+				934FF1F32CE4577600ADC151 /* DVDScreensaver.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +78,7 @@
 			packageProductDependencies = (
 			);
 			productName = DVDScreensaverScreensaver;
-			productReference = 934FF1F32CE4577600ADC151 /* DVDScreensaverScreensaver.saver */;
+			productReference = 934FF1F32CE4577600ADC151 /* DVDScreensaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -92,6 +92,7 @@
 				TargetAttributes = {
 					934FF1F22CE4577600ADC151 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -253,18 +254,22 @@
 		934FF1FD2CE4577600ADC151 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W735WRNN72;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DVDScreensaver;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = DVDScreensaverScreensaverView;
+				INFOPLIST_KEY_NSPrincipalClass = DVDScreensaverScreensaver.DVDScreensaverScreensaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AryamanSharda.DVDScreensaverScreensaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DVDScreensaver;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -272,18 +277,21 @@
 		934FF1FE2CE4577600ADC151 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W735WRNN72;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DVDScreensaver;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = DVDScreensaverScreensaverView;
+				INFOPLIST_KEY_NSPrincipalClass = DVDScreensaverScreensaver.DVDScreensaverScreensaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AryamanSharda.DVDScreensaverScreensaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DVDScreensaver;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
